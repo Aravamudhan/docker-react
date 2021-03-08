@@ -9,11 +9,6 @@ test('renders doc link', () => {
 
 test('renders instruction', () => {
   render(<App />);
-  const linkElement = screen.getByText(/save to reload/i);
-  expect(linkElement).toBeInTheDocument();
-});
-test('renders instruction', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/save to reload/i);
+  const linkElement = screen.getByText(/Learning Docker deployments/i);
   expect(linkElement).toBeInTheDocument();
 });
